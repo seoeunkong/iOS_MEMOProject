@@ -9,23 +9,31 @@
 /* Begin PBXBuildFile section */
 		59B28FCC244B4D6900DCCF82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B28FCB244B4D6900DCCF82 /* AppDelegate.swift */; };
 		59B28FCE244B4D6900DCCF82 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B28FCD244B4D6900DCCF82 /* SceneDelegate.swift */; };
-		59B28FD0244B4D6900DCCF82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B28FCF244B4D6900DCCF82 /* ViewController.swift */; };
 		59B28FD3244B4D6900DCCF82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59B28FD1244B4D6900DCCF82 /* Main.storyboard */; };
 		59B28FD6244B4D6900DCCF82 /* MyMemory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 59B28FD4244B4D6900DCCF82 /* MyMemory.xcdatamodeld */; };
 		59B28FD8244B4D6A00DCCF82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59B28FD7244B4D6A00DCCF82 /* Assets.xcassets */; };
 		59B28FDB244B4D6A00DCCF82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59B28FD9244B4D6A00DCCF82 /* LaunchScreen.storyboard */; };
+		59B29045244C486A00DCCF82 /* MemoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B29044244C486A00DCCF82 /* MemoListVC.swift */; };
+		59B29047244C488700DCCF82 /* MemoFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B29046244C488700DCCF82 /* MemoFormVC.swift */; };
+		59B29049244C489800DCCF82 /* MemoReadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B29048244C489800DCCF82 /* MemoReadVC.swift */; };
+		59B2904B244C491600DCCF82 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B2904A244C491600DCCF82 /* MemoCell.swift */; };
+		59B2904D244C493B00DCCF82 /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B2904C244C493B00DCCF82 /* MemoData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		59B28FC8244B4D6900DCCF82 /* MyMemory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMemory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59B28FC8244B4D6900DCCF82 /* 페이퍼-잇.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "페이퍼-잇.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B28FCB244B4D6900DCCF82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59B28FCD244B4D6900DCCF82 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		59B28FCF244B4D6900DCCF82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		59B28FD2244B4D6900DCCF82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		59B28FD5244B4D6900DCCF82 /* MyMemory.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyMemory.xcdatamodel; sourceTree = "<group>"; };
 		59B28FD7244B4D6A00DCCF82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59B28FDA244B4D6A00DCCF82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59B28FDC244B4D6A00DCCF82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59B29044244C486A00DCCF82 /* MemoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListVC.swift; sourceTree = "<group>"; };
+		59B29046244C488700DCCF82 /* MemoFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoFormVC.swift; sourceTree = "<group>"; };
+		59B29048244C489800DCCF82 /* MemoReadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoReadVC.swift; sourceTree = "<group>"; };
+		59B2904A244C491600DCCF82 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
+		59B2904C244C493B00DCCF82 /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +58,7 @@
 		59B28FC9244B4D6900DCCF82 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				59B28FC8244B4D6900DCCF82 /* MyMemory.app */,
+				59B28FC8244B4D6900DCCF82 /* 페이퍼-잇.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,12 +68,16 @@
 			children = (
 				59B28FCB244B4D6900DCCF82 /* AppDelegate.swift */,
 				59B28FCD244B4D6900DCCF82 /* SceneDelegate.swift */,
-				59B28FCF244B4D6900DCCF82 /* ViewController.swift */,
 				59B28FD1244B4D6900DCCF82 /* Main.storyboard */,
 				59B28FD7244B4D6A00DCCF82 /* Assets.xcassets */,
 				59B28FD9244B4D6A00DCCF82 /* LaunchScreen.storyboard */,
 				59B28FDC244B4D6A00DCCF82 /* Info.plist */,
 				59B28FD4244B4D6900DCCF82 /* MyMemory.xcdatamodeld */,
+				59B29044244C486A00DCCF82 /* MemoListVC.swift */,
+				59B2904A244C491600DCCF82 /* MemoCell.swift */,
+				59B29046244C488700DCCF82 /* MemoFormVC.swift */,
+				59B2904C244C493B00DCCF82 /* MemoData.swift */,
+				59B29048244C489800DCCF82 /* MemoReadVC.swift */,
 			);
 			path = MyMemory;
 			sourceTree = "<group>";
@@ -87,7 +99,7 @@
 			);
 			name = MyMemory;
 			productName = MyMemory;
-			productReference = 59B28FC8244B4D6900DCCF82 /* MyMemory.app */;
+			productReference = 59B28FC8244B4D6900DCCF82 /* 페이퍼-잇.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -141,9 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59B2904B244C491600DCCF82 /* MemoCell.swift in Sources */,
+				59B2904D244C493B00DCCF82 /* MemoData.swift in Sources */,
 				59B28FD6244B4D6900DCCF82 /* MyMemory.xcdatamodeld in Sources */,
-				59B28FD0244B4D6900DCCF82 /* ViewController.swift in Sources */,
+				59B29047244C488700DCCF82 /* MemoFormVC.swift in Sources */,
+				59B29049244C489800DCCF82 /* MemoReadVC.swift in Sources */,
 				59B28FCC244B4D6900DCCF82 /* AppDelegate.swift in Sources */,
+				59B29045244C486A00DCCF82 /* MemoListVC.swift in Sources */,
 				59B28FCE244B4D6900DCCF82 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,15 +305,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H85PJZRAHD;
 				INFOPLIST_FILE = MyMemory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rubypaper.MyMemory;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "페이퍼-잇";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -306,15 +324,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H85PJZRAHD;
 				INFOPLIST_FILE = MyMemory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rubypaper.MyMemory;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "페이퍼-잇";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
