@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		590ACE5224A870C500EC6820 /* MemoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590ACE5124A870C500EC6820 /* MemoDAO.swift */; };
 		59B28FCC244B4D6900DCCF82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B28FCB244B4D6900DCCF82 /* AppDelegate.swift */; };
 		59B28FCE244B4D6900DCCF82 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B28FCD244B4D6900DCCF82 /* SceneDelegate.swift */; };
 		59B28FD3244B4D6900DCCF82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59B28FD1244B4D6900DCCF82 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		590ACE5124A870C500EC6820 /* MemoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDAO.swift; sourceTree = "<group>"; };
 		59B28FC8244B4D6900DCCF82 /* 페이퍼-잇.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "페이퍼-잇.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B28FCB244B4D6900DCCF82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59B28FCD244B4D6900DCCF82 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				59B2904A244C491600DCCF82 /* MemoCell.swift */,
 				59B29046244C488700DCCF82 /* MemoFormVC.swift */,
 				59B2904C244C493B00DCCF82 /* MemoData.swift */,
+				590ACE5124A870C500EC6820 /* MemoDAO.swift */,
 				59B29048244C489800DCCF82 /* MemoReadVC.swift */,
 				59B2E7E1245BF0DA0004AFA9 /* CSLogButton.swift */,
 				59B2E85F245D28230004AFA9 /* SideBarVC.swift */,
@@ -261,6 +264,7 @@
 				59B29047244C488700DCCF82 /* MemoFormVC.swift in Sources */,
 				59B29049244C489800DCCF82 /* MemoReadVC.swift in Sources */,
 				59E612BA24614D5500F62457 /* TutorialMasterVC.swift in Sources */,
+				590ACE5224A870C500EC6820 /* MemoDAO.swift in Sources */,
 				59B28FCC244B4D6900DCCF82 /* AppDelegate.swift in Sources */,
 				59B2E84C245D1C0F0004AFA9 /* SWRevealViewController.m in Sources */,
 				59B29045244C486A00DCCF82 /* MemoListVC.swift in Sources */,
