@@ -316,21 +316,92 @@
             </objects>
             <point key="canvasLocation" x="-551" y="703"/>
         </scene>
-        <!--ProfileVC-->
+        <!--프로필-->
         <scene sceneID="mNS-mS-ucT">
             <objects>
-                <viewController id="AuO-fA-dym" customClass="ProfileVC" customModule="페이퍼_잇" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="프로필" id="AuO-fA-dym" userLabel="프로필" customClass="ProfileVC" customModule="페이퍼_잇" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="daK-J8-qAq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="8YZ-By-rBS">
+                                <rect key="frame" x="169" y="253" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="tNv-KW-iDa"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Jei-SA-LD7"/>
+                    <navigationItem key="navigationItem" id="Jei-SA-LD7">
+                        <barButtonItem key="rightBarButtonItem" title="새 계정" id="YTV-Tj-ymH">
+                            <connections>
+                                <segue destination="pKM-22-NQy" kind="show" id="pDU-e4-XPe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="indicatorView" destination="8YZ-By-rBS" id="ig7-uJ-sEq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bs1-WW-FHw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1026" y="703"/>
+        </scene>
+        <!--신규 계정 등록 화면-->
+        <scene sceneID="H5z-Yk-TfU">
+            <objects>
+                <viewController title="신규 계정 등록 화면" id="pKM-22-NQy" customClass="JoinVC" customModule="페이퍼_잇" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ydc-4X-EvR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="account" translatesAutoresizingMaskIntoConstraints="NO" id="9kB-ih-SJR">
+                                <rect key="frame" x="10" y="80" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nza-gB-Dz8">
+                                <rect key="frame" x="110" y="80" width="255" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="OSF-u4-k7y">
+                                        <rect key="frame" x="0.0" y="28" width="255" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OSF-u4-k7y" id="BxF-6c-7CM">
+                                            <rect key="frame" x="0.0" y="0.0" width="255" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="iOs-kF-iXM">
+                                <rect key="frame" x="169" y="303" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Yjo-N0-RTk"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="신규 계정 등록" id="EMf-Qw-5Z0">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="U3D-n0-ELi">
+                            <connections>
+                                <action selector="submit:" destination="pKM-22-NQy" id="i02-lE-Qln"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="indicatorView" destination="iOs-kF-iXM" id="u0y-K1-i5M"/>
+                        <outlet property="profile" destination="9kB-ih-SJR" id="8tI-bS-xge"/>
+                        <outlet property="tableView" destination="Nza-gB-Dz8" id="5bZ-12-krd"/>
+                        <segue destination="1EE-tw-fzW" kind="unwind" identifier="backProfileVC" unwindAction="backProfileVC:" id="6Dp-2X-iTg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SkY-NV-GCb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="1EE-tw-fzW" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1828" y="702.99850074962524"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="44H-84-Fmi">
@@ -386,4 +457,7 @@
             <point key="canvasLocation" x="249" y="703"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="account" width="90" height="90"/>
+    </resources>
 </document>
